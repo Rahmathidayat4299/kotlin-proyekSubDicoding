@@ -23,18 +23,7 @@ package com.dicoding.exam.latihan2
  *
  *  Jika valueC bernilai null, silakan tetapkan nilai 50 sebagai nilai default-nya
  */
-fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
-    val valueCNotNull = if (valueC == null) {
-        50
-    } else {
-        valueC
-    }
-    val valueA = valueA
-    val valueB = valueB
-
-    val result = valueA + (valueB - (valueCNotNull ?: 50))
-    return result
-}
+fun calculate(valueA: Int, valueB: Int, valueC: Int?) = valueA + (valueB - (valueC ?: 50))
 
 /**
  *  TODO 2
@@ -43,7 +32,7 @@ fun calculate(valueA: Int, valueB: Int, valueC: Int?): Int {
  *      Result is ${result}
  */
 fun result(result: Int): String {
-    return "Result is ${result}"
+    return "Result is $result"
 }
 
 fun main() {

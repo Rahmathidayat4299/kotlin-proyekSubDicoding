@@ -27,7 +27,7 @@ package com.dicoding.exam.latihan4
  *
  */
 fun vehicle(): Map<String, String> {
-    val mapOf = mapOf<String, String>(
+    val mapOf = mapOf(
         "type" to "motorcycle",
         "maxSpeed" to "230Km/s",
         "maxTank" to "100Ltr"
@@ -35,6 +35,7 @@ fun vehicle(): Map<String, String> {
     val type = mapOf.getValue("type")
     val maxSpeed = mapOf.getValue("maxSpeed")
     val maxTank = mapOf.getValue("maxTank")
+
 
     println(
         """
